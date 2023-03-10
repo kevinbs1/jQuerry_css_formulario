@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+ <head>
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="kevinbs1" content="kevinho" />
+    <meta name="description" content="oooooooooooooooo yeah é isso ai."/>
+    <meta name="keywords" content="não sei o que botar kkkkkkk"/>
+    <meta name="author" content="kevinbs1" />
+    <meta name="URL" content="https://github.com/kevinbs1"/>
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta name="robots" content="index, follow"/>
+    
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->       
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts-icones.css">
+
+
+	<title>Mascara JQuery Telefone - Código jQuery</title>
+
+ </head>
+
+<body>
+    
+<header class="main_header container">        
+    <div class="content">
+    
+        <div class="main_header_logo">
+        </div>
+    
+    </div>
+</header>
+
+<main class="main_content container">
+        
+    <section class="section-seu-codigo container">
+        
+        <div class="content">
+            
+            <h1 class="section_title"><i class="icon icon-code"></i> jQuery Mask</h1>
+            
+            <div class="box-artigo">
+                
+                <form class="formulario">
+                    
+                    <label>  
+                        
+                        <span class="icon icon-phone"> Telefone</span>    
+                        <input name="telefone" id="telefone" class="campo" type="text" placeholder="(21) 0000-0000">
+                    
+                    </label>
+
+                    <label>  
+                        
+                        <span class="icon icon-whatsapp-1"> Whatsapp</span>    
+                        <input name="whatsapp" id="whatsapp" class="campo" type="text" placeholder="(21) 90000-0000">
+                    
+                    </label>
+
+                    <label>  
+                        
+                        <span class="icon icon-calendar"> Data</span>    
+                        <input name="data" id="data" class="campo" type="text" placeholder="00/00/0000">
+                    
+                    </label>
+
+                    <label>  
+                        
+                        <span class="icon icon-clock"> Hora</span>    
+                        <input name="hora" id="hora" class="campo" type="text" placeholder="00:00">
+                    
+                    </label>
+
+                    <label>  
+                        
+                        <span class="icon icon-credit-card-1"> CPF</span>    
+                        <input name="cpf" id="cpf" class="campo" type="text" placeholder="999.999.999-99">
+                    
+                    </label>
+
+                </form>
+
+            </div><!--Box Artigo-->
+
+
+        <div class="clear"></div>
+        </div>
+    </section><!--FECHA BOX HTML-->
+
+</main>
+
+<footer class="main_footer container">
+    <div class="main_footer_copy">
+
+        <p class="m-b-footer"> Kevin BS - 2021, todos os direitos reservados.</p> 
+        <p class="by"><i class="icon icon-heart-3"></i> Desenvolvido por: Kevin Barroso Sousa</p>
+    
+    </div>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+
+<script src="js/jquery.maskedinput.min.js"></script> 
+<script type="text/javascript">
+
+    //mascaras
+    $(document).ready(function(){
+
+      $("#telefone").mask("99 9999-9999");
+      $("#whatsapp").mask("99 99999-9999");
+      $("#cpf").mask("999.999.999-99");
+      $("#data").mask("99/99/9999");
+      $("#hora").mask("99:99");
+    });
+    //mascaras
+
+</script>
+
+</body>
+</html>
